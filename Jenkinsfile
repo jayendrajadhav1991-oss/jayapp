@@ -29,7 +29,7 @@ pipeline {
 
         stage ("deployment") {
             steps {
-                bat "del /q /s C:\inetpub\wwwroot\jayapp\\*"
+                bat "del /q /s C:\\inetpub\\wwwroot\\jayapp\\*"
             bat "xcopy /E /Y /I dist\\newangular\\browser\\* c:\\inetpub\\wwwroot\\jayapp\\"
              } 
         }
